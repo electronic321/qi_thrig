@@ -1,0 +1,221 @@
+"#self": {
+	backgroundColor: '#FFFFFF'
+},
+
+"#view_topBar":{
+	backgroundColor: '#E9477E',
+	layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	top:'0',
+	height: 50
+},
+"#img_location":{
+	top: '10',
+	image: '/images/location.png',
+	width: '30',
+	height: '30'
+},
+
+"#lbl_location":{
+	text: 'Location',
+	font: {
+		fontSize: '18sp',
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	//paddingLeft: '3',
+	//backgroundImage: '/images/input.png',
+	width: Titanium.UI.FILL,
+	height: '50'
+},
+
+
+"#view_Window":{
+	backgroundImage: '/images/bgback.png',
+	layout: 'vertical',
+	top: '50',
+	color: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	bottom: '50'
+},
+"#view_userName":{
+	layout: 'horizontal',
+	backgroundColor: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	height: 40
+},
+"#lbl_Welcome":{
+	left: '10',
+	text: 'Welcome',
+	color:'#000000',
+	font: {
+		fontSize: '18sp',
+		//fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	top: '5',
+	height: '30'
+},
+
+"#lbl_userName":{
+	left: '20',
+	text: 'Sabir',
+	color:'#E9477E',
+	font: {
+		fontSize: '18sp',
+		fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	top: '5',
+	height: '30'
+},
+
+"#view_goAddEvent":{
+	top: '5',
+	layout: 'vertical',
+	color: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+},
+
+
+
+"#lbl_first":{
+	//top: '60',
+	left: '10',
+	color: '#FFFFFF',
+	text: 'Looking for fun, Live it up here',
+	font: {
+		fontSize: '14sp'
+	},
+	//textAlign: 'center',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL
+},
+
+"#btn_go":{
+	width: '90',
+	top: '5',
+	backgroundColor: '#E9477E',
+	title: 'GO',
+	//borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp',
+		//fontWeight: 'bold'
+	},
+	height: '40',
+	left: '10'
+},
+
+"#lbl_second":{
+	top: '5',
+	left: '10',
+	right: '10',
+	color: '#FFFFFF',
+	text: 'At an Event? Take a picture from Thriggle app and share Good Times in real time',
+	font: {
+		fontSize: '14sp'
+	},
+	//textAlign: 'center',
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+
+"#btn_addEvent":{
+	left: '10',
+	width: '130',
+	top: '5',
+	backgroundColor: '#E9477E',
+	title: 'ADD EVENT',
+	//borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp',
+		//fontWeight: 'bold'
+	},
+	height: '45'
+},
+
+"#lbl_third":{
+	top: '5',
+	left: '10',
+	color: '#FFFFFF',
+	text: 'Thriggle is located in Houston, TX in an ownership with Grow Media - Yahoo! Sports Radio 1560 AM & ESPN  97.5FM Houston',
+	font: {
+		fontSize: '14sp'
+	},
+	//textAlign: 'center',
+	width:Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE
+},
+
+"#img_Yahoo":{
+	top: '50',
+	image: '/images/yahoo.png',
+	width: '100',
+	height: '60'
+},
+"#img_ESPN":{
+	top: '10',
+	image: '/images/espn.png',
+	width: '100',
+	height: '60'
+}
+
+"#view_tabBar":{
+	bottom: '0',
+	layout: 'horizontal',
+	backgroundImage: '/images/tabsback.png',
+	width:Titanium.UI.FILL,
+	height: 50
+},
+
+"#view_imgHome":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgEvents":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgUser":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgClose":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#img_home":{
+	top: '5',
+	image: '/images/home.png',
+	width: '30',
+	height: '30'
+},
+"#img_events":{
+	top: '5',
+	image: '/images/dollar.png',
+	width: '30',
+	height: '30'
+},
+"#img_user":{
+	top: '5',
+	image: '/images/user.png',
+	width: '30',
+	height: '30'
+},
+"#img_close":{
+	top: '5',
+	image: '/images/close.png',
+	width: '30',
+	height: '30'
+},
+

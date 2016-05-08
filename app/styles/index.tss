@@ -1,0 +1,101 @@
+"#self": {
+	backgroundColor: '#FFFFFF'
+},
+
+"#scrollView": {
+	backgroundColor: 'transparent',
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL
+},
+
+"#img_logo":{
+	image: '/images/homescreenbg.png',
+	width:Titanium.UI.FILL,
+	height: '200'
+},
+
+"#tf_email":{
+	top: '25',
+	left: '30',
+	right: '30',
+	hintText: 'Email Address',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+},
+
+"#tf_password":{
+	top: '4',
+	left: '30',
+	right: '30',
+	hintText: 'Password',
+	color: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	passwordMask: true,
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+},
+
+"#btn_signIn":{
+	width:Titanium.UI.FILL,
+	top: '25',
+	left: '30',
+	right: '30',
+
+	backgroundColor: '#E9477E',
+	title: 'Sign In',
+	borderRadius: '3',
+	color: '#000000',
+	font: {
+		fontSize: '16sp'
+	},
+	height: '45'
+},
+
+"#lbl_forgetPassword":{
+	top: '10',
+	//right: '30'
+	color: '#000000',
+	font: {
+		fontSize: '14sp'
+	},
+	textAlign: 'center',
+	height: '20'
+},
+
+"#btn_signUp":{
+	width:Titanium.UI.FILL,
+	backgroundColor: '#E9477E',
+	title: 'Sign Up',
+	borderRadius: '3',
+	color: '#000000',
+	font: {
+		fontSize: '16sp'
+	},
+	top: '10',
+	left: '30',
+	height: '45',
+	right: '30'
+},
+
+"#lbl_skipLogin":{
+	right: '30',
+	color: '#000000',
+	font: {
+		fontSize: '14sp',
+		//fontWeight: 'bold'
+	},
+	textAlign: 'center',
+	top: '4',
+	height: '44'
+}
+
+
+

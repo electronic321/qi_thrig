@@ -1,0 +1,263 @@
+"#self": {
+	backgroundColor: '#FFFFFF'
+},
+
+"#view_topBar":{
+	top: '0',
+	backgroundColor: '#E9477E',
+	layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+"#lbl_profile":{
+	left: '20',
+	text: 'EDIT PROFILE',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '18sp',
+		fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	top: '5',
+	height: '30'
+},
+
+"#scroll_profileInfo":{
+	top: '40',
+	layout: 'vertical',
+	backgroundColor: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	//height:Titanium.UI.SIZE,
+	bottom: '50'
+},
+
+"#view_generalProfileInfo":{
+	top: '0',
+	color: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	height: '100'
+},
+
+
+
+"#img_user":{
+	top: '10',
+	left: '10',
+	image: '/images/profilepic.png',
+	width: '100',
+	height: '100'
+},
+
+"#lbl_welcome":{
+	top: '10',
+	left: '150',
+	text: 'Welcome',
+	color: '#000000',
+	font: {
+		fontSize: '18sp'
+	},
+	//textAlign: 'center',
+	height: '20',
+	width:Titanium.UI.SIZE
+},
+
+"#lbl_userName":{
+	top: '30',
+	left: '150',
+	text: 'Muhammad Sabir',
+	color: '#000000',
+	font: {
+		fontSize: '18sp',
+		fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	height: '30',
+	width:Titanium.UI.SIZE
+},
+
+"#btn_takePic":{
+	left: '150',
+	width: Titanium.UI.SIZE,
+	top: '70',
+	backgroundColor: '#E9477E',
+	title: 'PICTURE',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp'
+	},
+	height: '30'
+},
+"#btn_uploadPic":{
+	left: '250',
+	width: Titanium.UI.SIZE,
+	top: '70',
+	backgroundColor: '#000000',
+	title: 'UPLOAD',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp'
+	},
+	height: '30'
+},
+
+"#view_editingProfileInfo":{
+	top: '20',
+	layout: 'vertical',
+	color: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+},
+
+
+"#tf_userName":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'UserName',
+	color: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#000000',
+	backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+"#tf_zipCode":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'ZipCode',
+	color: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#000000',
+	backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+"#tf_email":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Email Address',
+	color: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#000000',
+	backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+"#tf_password":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Password',
+	color: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	passwordMask: true,
+	hintTextColor: '#000000',
+	backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+"#view_update":{
+	layout: 'horizontal',
+	top: '20',
+	color: '#FFFFFF',
+	width:Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE
+},
+
+"#btn_update":{
+	left: '80',
+	width: Titanium.UI.SIZE,
+	top: '10',
+	backgroundColor: '#E9477E',
+	title: 'UPDATE',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp'
+	},
+	height: '40'
+},
+"#btn_logout":{
+	left: '40',
+	top: '10',
+	backgroundColor: '#E9477E',
+	title: 'LOGOUT',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp'
+	},
+	width: Titanium.UI.SIZE,
+	height: '40'
+},
+
+"#view_tabBar":{
+	bottom: '0',
+	layout: 'horizontal',
+	backgroundImage: '/images/tabsback.png',
+	width:Titanium.UI.FILL,
+	height: 50
+},
+
+"#view_imgHome":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgEvents":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgUser":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgClose":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#img_home":{
+	top: '5',
+	image: '/images/home.png',
+	width: '30',
+	height: '30'
+},
+"#img_events":{
+	top: '5',
+	image: '/images/dollar.png',
+	width: '30',
+	height: '30'
+},
+"#image_user":{
+	top: '5',
+	image: '/images/user.png',
+	width: '30',
+	height: '30'
+},
+"#img_close":{
+	top: '5',
+	image: '/images/close.png',
+	width: '30',
+	height: '30'
+},
+
+

@@ -1,0 +1,46 @@
+<Alloy>
+	<Window id="self">
+
+		<View id="view_topBar">
+			<Label id="lbl_profile"></Label>
+		</View>
+		<ScrollView id="scroll_profileInfo" >
+			<View id="view_generalProfileInfo">
+
+				<ImageView id="img_user"></ImageView>
+				<Label id="lbl_welcome"></Label>
+				<Label id="lbl_userName"></Label>
+				<Button id="btn_takePic"></Button>
+				<Button id="btn_uploadPic"></Button>
+
+			</View>
+			<View id="view_editingProfileInfo">
+				<TextField id="tf_userName"></TextField>
+				<TextField id="tf_zipCode"></TextField>
+				<TextField id="tf_email"></TextField>
+				<TextField id="tf_password"></TextField>
+
+			</View>
+			<View id="view_update">
+
+				<Button id="btn_update"></Button>
+				<Button id="btn_logout"></Button>
+			</View>
+		</ScrollView>
+		<View id="view_tabBar">
+			<View id="view_imgHome">
+				<ImageView id="img_home"></ImageView>
+			</View>
+			<View id="view_imgEvents">
+				<ImageView id="img_events"></ImageView>
+			</View>
+			<View id="view_imgUser">
+				<ImageView id="image_user"></ImageView>
+			</View>
+			<View id="view_imgClose">
+				<ImageView id="img_close"></ImageView>
+			</View>
+
+		</View>
+	</Window>
+</Alloy>

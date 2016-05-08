@@ -1,0 +1,89 @@
+"#self": {
+	backgroundColor: '#FFFFFF'
+},
+
+"#view_topBar":{
+	top: '0',
+	backgroundColor: '#E9477E',
+	layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+"#lbl_events":{
+	left: '40',
+	text: 'DEALS & EVENTS',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '18sp',
+		fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	top: '5',
+	height: '30'
+},
+
+"#view_searchBar":{
+	top: '40',
+	//layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.SIZE
+},
+
+"#lbl_welcome":{
+	top: '0',
+	left: '20',
+	text: 'Welcome',
+	color: "#000000",
+	font: {
+		fontSize: '14sp'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	width: '80',
+	height: '30'
+},
+
+
+
+"#lbl_userName":{
+	top: '0',
+	left: '90',
+	text: 'Muhammad Sabir !',
+	color: '#E9477E',
+	font: {
+		fontSize: '14sp'
+	},
+	//textAlign: 'center',
+	width:Titanium.UI.Size,
+	height: '30'
+},
+
+"#search_searchBar":{
+	top: '35',
+	left: '20',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	hintText: 'Event Search ...',
+	paddingLeft: '10',
+	right: '100',
+	width: '300',
+	height: '40'
+},
+
+"#img_searchNeighbour":{
+	top: '35',
+	left: '300',
+	image: '/images/search_neighbour.png',
+	width: '40',
+	height: '40'
+}
+
+"#img_searchIcon":{
+	top: '35',
+	left: '340',
+	backgroundColor: '#CCC',
+	image: '/images/search_icon.png',
+	width: '40',
+	height: '40'
+}

@@ -1,0 +1,15 @@
+<Alloy>
+	<Window id="self" >
+		<ScrollView id="scrollView" layout="vertical">
+
+			<ImageView id="img_logo"></ImageView>
+			<TextField id="tf_email"></TextField>
+			<TextField id="tf_password"></TextField>
+			<Button id="btn_signIn"></Button>
+			<Label id="lbl_forgetPassword" text="Forgot Password ?"></Label>
+			<Button id="btn_signUp"></Button>
+			<Label id="lbl_skipLogin" text="Skip Login"></Label>
+
+		</ScrollView>
+	</Window>
+</Alloy>

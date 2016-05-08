@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="self">
+
+		<View id="view_topBar">
+			<Label id="lbl_events"></Label>
+		</View>
+		<View id="view_searchBar">
+			<Label id="lbl_welcome"></Label>
+			<Label id="lbl_userName"></Label>
+			<TextField id="search_searchBar"></TextField>
+			<ImageView id="img_searchNeighbour"></ImageView>
+			<ImageView id="img_searchIcon"></ImageView>
+
+		</View>
+
+	</Window>
+</Alloy>

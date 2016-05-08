@@ -1,0 +1,42 @@
+<Alloy>
+	<Window id="self">
+
+		<View id="view_topBar">
+			<ImageView id="img_location"></ImageView>
+			<Label id="lbl_location"></Label>
+
+		</View>
+		<View id="view_Window">
+			<View id="view_userName">
+				<Label id="lbl_Welcome" ></Label>
+				<Label id="lbl_userName" ></Label>
+			</View>
+			<View id="view_goAddEvent">
+				<Label id="lbl_first"></Label>
+				<Button id="btn_go"></Button>
+				<Label id="lbl_second" ></Label>
+				<Button id="btn_addEvent"></Button>
+				<Label id="lbl_third" ></Label>
+				<ImageView id="img_Yahoo"></ImageView>
+				<ImageView id="img_ESPN"></ImageView>
+
+			</View>
+
+		</View>
+		<View id="view_tabBar">
+			<View id="view_imgHome">
+				<ImageView id="img_home"></ImageView>
+			</View>
+			<View id="view_imgEvents">
+				<ImageView id="img_events"></ImageView>
+			</View>
+			<View id="view_imgUser">
+				<ImageView id="img_user"></ImageView>
+			</View>
+			<View id="view_imgClose">
+				<ImageView id="img_close"></ImageView>
+			</View>
+
+		</View>
+	</Window>
+</Alloy>
