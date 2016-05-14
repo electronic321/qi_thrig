@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="self">
+		<View id="view_topBar">
+			<Label id="lbl_search"></Label>
+			<Label id="lbl_searchType"></Label>
+		</View>
+	</Window>
+</Alloy>

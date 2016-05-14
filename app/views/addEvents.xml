@@ -1,0 +1,86 @@
+<Alloy>
+	<Window id="self">
+		<View id="view_topBar">
+			<ImageView id="img_addEvents"></ImageView>
+			<Label id="lbl_addEvents"></Label>
+		</View>
+		<ScrollView id="scroll_textFields" >
+			<View id="view_imgAttachment">
+				<ImageView id="img_camera"></ImageView>
+				<Button id = "btn_snap"></Button>
+				<Button id = "btn_upload"></Button>
+
+			</View>
+			<TextField id="tf_eventTitle"></TextField>
+			<View id="view_interest">
+				<TextField id="tf_interest"></TextField>
+				<ImageView id="img_interest"></ImageView>
+
+			</View>
+			<View id="view_subInterest">
+				<TextField id="tf_subInterest"></TextField>
+				<ImageView id="img_subInterest"></ImageView>
+
+			</View>
+			<TextField id="tf_placeName"></TextField>
+			<TextField id="tf_streetAddress"></TextField>
+			<TextField id="tf_zipCode"></TextField>
+			<TextField id="tf_website"></TextField>
+			<TextField id="tf_phoneNumber"></TextField>
+			<View id="view_time">
+
+				<Label id="lbl_startTime"></Label>
+				<Label id="lbl_endTime"></Label>
+				<View id="view_clockStart">
+
+					<ImageView id="img_clockStart"></ImageView>
+					<Label id="lbl_TimeStart"></Label>
+
+				</View>
+				<View id="view_clockEnd">
+					<ImageView id="img_clockEnd"></ImageView>
+					<Label id="lbl_TimeEnd"></Label>
+				</View>
+				<ImageView id="img_dontshowStartTime"></ImageView>
+				<Label id="lbl_dontshowStartTime"></Label>
+				<ImageView id="img_dontShowEndTime"></ImageView>
+				<Label id="lbl_dontShowEndTime"></Label>
+				<Label id="lbl_date"></Label>
+				<ImageView id="img_oneTimeEvent"></ImageView>
+				<Label id="lbl_oneTimeEvent"></Label>
+				<ImageView id="img_repeatedEvents"></ImageView>
+				<Label id="lbl_repeatedEvents"></Label>
+				<View id="view_calenderOneTimeEvent">
+
+					<ImageView id="img_calenderOneTimeEvent"></ImageView>
+					<Label id="lbl_calenderOneTimeEvent"></Label>
+
+				</View>
+				<View id="view_calenderRepeatedEvents">
+					<ImageView id="img_calenderRepeatedEvents"></ImageView>
+					<Label id="lbl_calenderRepeatedEvents"></Label>
+				</View>
+				<Label id="lbl_description"></Label>
+				<TextArea id="ta_description"></TextArea>
+
+			</View>
+			<Button id="btn_post"></Button>
+
+		</ScrollView>
+		<View id="view_tabBar">
+			<View id="view_imgHome">
+				<ImageView id="img_home"></ImageView>
+			</View>
+			<View id="view_imgEvents">
+				<ImageView id="img_events"></ImageView>
+			</View>
+			<View id="view_imgUser">
+				<ImageView id="image_user"></ImageView>
+			</View>
+			<View id="view_imgClose">
+				<ImageView id="img_close"></ImageView>
+			</View>
+
+		</View>
+	</Window>
+</Alloy>

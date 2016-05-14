@@ -1,0 +1,59 @@
+"#self": {
+	backgroundColor: '#FFFFFF',
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
+},
+
+"#view_topBar":{
+	top: '0',
+	backgroundColor: '#E9477E',
+	layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+"#lbl_topBar":{
+	left: '20',
+	text: 'Choose Your Business Category',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '18sp',
+		fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	top: '5',
+	height: '30'
+},
+
+// "#view_searchBar":{
+	// top: '40',
+	// backgroundColor: '#FFFFFF',
+	// //layout: 'horizontal',
+	// width:Titanium.UI.FILL,
+	// height: '45',
+	// right: '20',
+	// left: '20'
+// },
+// "#searchBar":{
+	// top: '5',
+	// left: '0',
+	// text: 'Enter Category',
+	// showCancel: 'false',
+	// backgroundColor: '#000000',
+	// color: '#FFFFFF',
+	// font: {
+		// fontSize: '16sp',
+		// fontWeight: 'bold'
+	// },
+	// //textAlign: 'center',
+	// height: '40',
+	// width: '79.5%'
+// },
+// 
+// "#img_searchBar":{
+	// top:'5',
+	// left: '80%',
+	// backgroundColor: '#FFFFFF',
+	// image: '/images/search_icon.png',
+	// //width:'40',
+	// height: '40'
+// },
+// 

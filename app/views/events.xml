@@ -4,14 +4,68 @@
 		<View id="view_topBar">
 			<Label id="lbl_events"></Label>
 		</View>
-		<View id="view_searchBar">
+		<View id="view_welcome">
 			<Label id="lbl_welcome"></Label>
 			<Label id="lbl_userName"></Label>
-			<TextField id="search_searchBar"></TextField>
-			<ImageView id="img_searchNeighbour"></ImageView>
-			<ImageView id="img_searchIcon"></ImageView>
+		</View>
+		<View id="view_searchBar">
+
+			<View id="view_search">
+				<TextField id="tf_searchBar"></TextField>
+			</View>
+			<View id="view_imgNeighbour">
+				<ImageView id="img_searchNeighbour"></ImageView>
+			</View>
+			<View id="view_imgSearch">
+				<ImageView id="img_searchIcon"></ImageView>
+			</View>
 
 		</View>
+		<View id="view_dealsandEvents">
+			<View id="view_textDeals">
 
+				<Label id="lbl_dealsandEvents"></Label>
+				<ImageView id="img_refresh"></ImageView>
+				<Label id="lbl_date"></Label>
+			</View>
+			<View id="view_imgView">
+				<ImageView id="img_view"></ImageView>
+				<Label id="lbl_view"></Label>
+
+			</View>
+			<View id="view_imgAdd">
+				<ImageView id="img_add"></ImageView>
+				<Label id="lbl_add"></Label>
+
+			</View>
+			<View id="view_imgPickInterest">
+				<ImageView id="img_pickInterest"></ImageView>
+				<Label id="lbl_interest"></Label>
+
+			</View>
+		</View>
+		
+		
+		<ScrollableView id="scrollableView" showPagingControl="true">
+			
+		</ScrollableView>
+		
+		
+		
+		<View id="view_tabBar">
+			<View id="view_imgHome">
+				<ImageView id="img_home"></ImageView>
+			</View>
+			<View id="view_imgEvents">
+				<ImageView id="img_events"></ImageView>
+			</View>
+			<View id="view_imgUser">
+				<ImageView id="image_user"></ImageView>
+			</View>
+			<View id="view_imgClose">
+				<ImageView id="img_close"></ImageView>
+			</View>
+
+		</View>
 	</Window>
 </Alloy>

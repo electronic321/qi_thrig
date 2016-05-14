@@ -1,5 +1,7 @@
 "#self": {
-	backgroundColor: '#FFFFFF'
+	backgroundColor: '#FFFFFF',
+		windowSoftInputMode :Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN,
+
 },
 
 "#view_topBar":{
@@ -50,7 +52,7 @@
 
 "#lbl_welcome":{
 	top: '10',
-	left: '150',
+	left: '130',
 	text: 'Welcome',
 	color: '#000000',
 	font: {
@@ -63,8 +65,8 @@
 
 "#lbl_userName":{
 	top: '30',
-	left: '150',
-	text: 'Muhammad Sabir',
+	left: '130',
+	text: 'Umair Ahmed',
 	color: '#000000',
 	font: {
 		fontSize: '18sp',
@@ -76,7 +78,7 @@
 },
 
 "#btn_takePic":{
-	left: '150',
+	left: '130',
 	width: Titanium.UI.SIZE,
 	top: '70',
 	backgroundColor: '#E9477E',
@@ -89,7 +91,7 @@
 	height: '30'
 },
 "#btn_uploadPic":{
-	left: '250',
+	left: '230',
 	width: Titanium.UI.SIZE,
 	top: '70',
 	backgroundColor: '#000000',
@@ -119,8 +121,11 @@
 	color: "#000000",
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
-	hintTextColor: '#000000',
+	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height: '40'
 },
@@ -133,8 +138,11 @@
 	color: "#000000",
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
-	hintTextColor: '#000000',
+	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height: '40'
 },
@@ -147,8 +155,11 @@
 	color: "#000000",
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
-	hintTextColor: '#000000',
+	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height: '40'
 },
@@ -162,14 +173,17 @@
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
 	passwordMask: true,
-	hintTextColor: '#000000',
+	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height: '40'
 },
 
 "#view_update":{
-	layout: 'horizontal',
+	//layout: 'horizontal',
 	top: '20',
 	color: '#FFFFFF',
 	width:Titanium.UI.SIZE,
@@ -177,29 +191,30 @@
 },
 
 "#btn_update":{
-	left: '80',
-	width: Titanium.UI.SIZE,
+	left: '5%',
+	width: '35%',
 	top: '10',
 	backgroundColor: '#E9477E',
 	title: 'UPDATE',
 	borderRadius: '3',
 	color: '#FFFFFF',
 	font: {
-		fontSize: '14sp'
+		fontSize: '16sp'
 	},
 	height: '40'
 },
 "#btn_logout":{
-	left: '40',
+	left: '50%',
+	right:'5%',
 	top: '10',
 	backgroundColor: '#E9477E',
 	title: 'LOGOUT',
 	borderRadius: '3',
 	color: '#FFFFFF',
 	font: {
-		fontSize: '14sp'
+		fontSize: '16sp'
 	},
-	width: Titanium.UI.SIZE,
+	width: '35%',
 	height: '40'
 },
 
@@ -236,28 +251,28 @@
 },
 
 "#img_home":{
-	top: '5',
+	//top: '5',
 	image: '/images/home.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 "#img_events":{
-	top: '5',
+	//top: '5',
 	image: '/images/dollar.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 "#image_user":{
-	top: '5',
+	//top: '5',
 	image: '/images/user.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 "#img_close":{
-	top: '5',
+	//top: '5',
 	image: '/images/close.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 
 

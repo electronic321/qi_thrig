@@ -1,5 +1,7 @@
 "#self": {
-	backgroundColor: '#FFFFFF'
+	backgroundColor: '#FFFFFF',
+		windowSoftInputMode :Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN,
+
 },
 
 "#view_topBar":{
@@ -7,17 +9,19 @@
 	layout: 'horizontal',
 	width:Titanium.UI.FILL,
 	top:'0',
-	height: 50
+	height: '40'
 },
 "#img_location":{
 	top: '10',
+	left:'00',
 	image: '/images/location.png',
 	width: '30',
 	height: '30'
 },
 
 "#lbl_location":{
-	text: 'Location',
+	text: 'Houstan, TX',
+	left:'10',
 	font: {
 		fontSize: '18sp',
 	},
@@ -57,8 +61,8 @@
 },
 
 "#lbl_userName":{
-	left: '20',
-	text: 'Sabir',
+	left: '10',
+	text: 'Umair',
 	color:'#E9477E',
 	font: {
 		fontSize: '18sp',
@@ -195,27 +199,27 @@
 },
 
 "#img_home":{
-	top: '5',
+	//top: '5',
 	image: '/images/home.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 "#img_events":{
-	top: '5',
+	//top: '5',
 	image: '/images/dollar.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 "#img_user":{
-	top: '5',
+	//top: '5',
 	image: '/images/user.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 "#img_close":{
-	top: '5',
+	//top: '5',
 	image: '/images/close.png',
-	width: '30',
-	height: '30'
+	width: '40',
+	height: '40'
 },
 

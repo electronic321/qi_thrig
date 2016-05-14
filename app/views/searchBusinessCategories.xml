@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="self">
+		<View id="view_topBar">
+			<Label id="lbl_topBar"></Label>
+		</View>
+		<!-- <View id="view_searchBar">
+		<SearchBar id = "searchBar"></SearchBar>
+		<ImageView id="img_searchBar"></ImageView>
+		
+		</View> -->
+	</Window>
+</Alloy>

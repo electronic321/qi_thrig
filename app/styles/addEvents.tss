@@ -1,0 +1,644 @@
+"#self": {
+	backgroundColor: '#FFFFFF',
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
+},
+
+"#view_topBar":{
+	top: '0',
+	left:'0',
+	backgroundColor: '#E9477E',
+	layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+"#img_addEvents":{
+	//top: '10',
+	//backgroundColor: '#CCC',
+	image: '/images/cap.png',
+	height: '20',
+	left: '30',
+	width: '20'
+}
+
+
+"#lbl_addEvents":{
+	left: '10',
+	text: 'ADD EVENTS',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '14sp',
+		fontWeight: 'bold'
+	},
+	//textAlign: 'center',
+	//top: '5',
+	height: '40'
+},
+
+
+"#scroll_textFields":{
+	top: '40',
+	layout: 'vertical',
+	backgroundColor: '#FFFFFF',
+	width:Titanium.UI.FILL,
+	bottom: '50'
+	//height:Titanium.UI.FILL
+},
+
+"#view_imgAttachment":{
+	top: '10',
+	backgroundColor: 'white',
+	//layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '180'
+},
+
+
+"#img_camera":{
+	top: '10',
+	backgroundColor: '#CCC',
+	image: '/images/events.png',
+	height: '120',
+	left: '115',
+	width: '150'
+}
+
+
+"#btn_snap":{
+	width: '70',
+	top: '140',
+	left: '120',
+	//right: '30',
+
+	backgroundColor: '#E9477E',
+	title: 'PHOTO',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '16sp'
+	},
+	height: '25'
+},
+
+
+"#btn_upload":{
+	width: '70',
+	top: '140',
+	left: '195',
+	//right: '30',
+
+	backgroundColor: '#000000',
+	title: 'UPLOAD',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '16sp'
+	},
+	height: '25'
+},
+
+"#tf_eventTitle":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Title of an Event',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+		height:'40',
+	width:Titanium.UI.FILL
+},
+
+"#view_interest":{
+	top: '10',
+	left: '30',
+	right: '30',
+	backgroundColor: '#eef2f5',
+	//layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+
+"#tf_interest":{
+	top: '0',
+	left: '0',
+	right: '0',
+	hintText: 'Enter 1st Interest',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:'79.5%',
+	height:'40'
+},
+
+"#img_interest":{
+	top: '15',
+	backgroundColor: '#000000',
+	image: '/images/downarrow.png',
+	height: '15',
+	left: '85%',
+	width: '15'
+},
+
+"#view_subInterest":{
+	top: '10',
+	left: '30',
+	right: '30',
+	backgroundColor: '#eef2f5',
+	//layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+"#tf_subInterest":{
+	top: '0',
+	left: '0',
+	right: '0',
+	hintText: 'Enter 1st Sub Interest',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:'79.5%',
+	height:'40'
+},
+"#img_subInterest":{
+	top: '15',
+	backgroundColor: '#000000',
+	image: '/images/downarrow.png',
+	height: '15',
+	left: '85%',
+	width: '15'
+},
+"#tf_placeName":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Place Name*',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height:'40'
+},
+"#tf_streetAddress":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Street Address of Event*',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height:'40'
+},
+"#tf_zipCode":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Zip Code (12345)',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height:'40'
+},
+"#tf_website":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Website (Link must starts with http://www)',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height:'40'
+},
+"#tf_phoneNumber":{
+	top: '10',
+	left: '30',
+	right: '30',
+	hintText: 'Phone Number',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height:'40'
+},
+
+"#view_time":{
+	top: '10',
+	left: '30',
+	right: '30',
+	//backgroundColor: '#000000',
+	//layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	height: '350'
+},
+"#lbl_startTime":{
+	left: '0',
+	text: 'Start Time*',
+	color: '#000000',
+	font: {
+		fontSize: '12sp'
+	},
+	//textAlign: 'center',
+	top: '0',
+	width: '49.75%',
+	height: '15'
+},
+
+"#lbl_endTime":{
+	left: '50%',
+	text: 'End Time*',
+	color: '#000000',
+	font: {
+		fontSize: '12sp'
+	},
+	//textAlign: 'center',
+	top: '0',
+	width: '49.75%',
+	height: '15'
+},
+
+"#view_clockStart":{
+	top: '25',
+	left: '0',
+	//right:'30',
+	backgroundColor:'#eef2f5',
+	//layout: 'horizontal',
+	width: '45%',
+	height: '30'
+},
+
+"#img_clockStart":{
+
+	//top: '5',
+	//backgroundColor: '#CCC',
+	image: '/images/clock.png',
+	height: '15',
+	left: '10',
+	width: '15'
+}
+"#lbl_TimeStart":{
+
+	left: '30',
+	text: '4 : 05 AM',
+	color: '#000000',
+	font: {
+		fontSize: '14sp'
+	},
+	//textAlign: 'center',
+	top: '5',
+	width: '60%',
+	height: '20'
+},
+
+"#view_clockEnd":{
+	top: '25',
+	left: '50%',
+	right: '30',
+	backgroundColor:'#eef2f5',
+	//layout: 'horizontal',
+	width: '45%',
+	height: '30'
+},
+
+"#img_clockEnd":{
+	//top: '5',
+	//backgroundColor: '#CCC',
+	image: '/images/clock.png',
+	height: '15',
+	left: '10',
+	width: '15',
+	
+}
+"#lbl_TimeEnd":{
+	left: '30',
+	text: '11 : 05 PM',
+	color: '#000000',
+	font: {
+		fontSize: '14sp'
+	},
+	//textAlign: 'center',
+	top: '5',
+	width: '60%',
+	height: '20'
+},
+
+
+"#img_dontshowStartTime":{
+	top: '60',
+	//backgroundColor: '#CCC',
+	image: '/images/clock.png',
+	height: '15',
+	left: '0',
+	width: '15'
+}
+"#lbl_dontshowStartTime":{
+	top: '60',
+	left: '7%',
+	text: 'Donot Show Start Time',
+	color: '#000000',
+	font: {
+		fontSize: '10sp'
+	},
+	//textAlign: 'center',
+	width: '40%',
+	height: '15'
+},
+
+"#img_dontShowEndTime":{
+	top: '60',
+	//backgroundColor: '#CCC',
+	image: '/images/clock.png',
+	height: '15',
+	left: '50%',
+	width: '15'
+}
+"#lbl_dontShowEndTime":{
+	top: '60',
+	left: '57%',
+	text: 'Donot Show End Time',
+	color: '#000000',
+	font: {
+		fontSize: '10sp'
+	},
+	//textAlign: 'center',
+	width: '40%',
+	height: '15'
+},
+
+"#lbl_date":{
+	left: '0',
+	text: 'Date*',
+	color: '#000000',
+	font: {
+		fontSize: '12sp'
+	},
+	//textAlign: 'center',
+	top: '80',
+	width: '50',
+	height: '20'
+},
+
+
+
+
+
+"#img_oneTimeEvent":{
+	top: '110',
+	//backgroundColor: '#CCC',
+	image: '/images/clock.png',
+	height: '15',
+	left: '0',
+	width: '15'
+}
+"#lbl_oneTimeEvent":{
+	top: '110',
+	left: '7%',
+	text: 'One Time Event',
+	color: '#000000',
+	font: {
+		fontSize: '10sp'
+	},
+	//textAlign: 'center',
+	width: '40%',
+	height: '15'
+},
+
+"#img_repeatedEvents":{
+	top: '110',
+	//backgroundColor: '#CCC',
+	image: '/images/clock.png',
+	height: '15',
+	left: '50%',
+	width: '15'
+}
+"#lbl_repeatedEvents":{
+	top: '110',
+	left: '57%',
+	text: 'Events that repeats weekly',
+	color: '#000000',
+	font: {
+		fontSize: '10sp'
+	},
+	//textAlign: 'center',
+	width: '40%',
+	height: '15'
+},
+
+
+
+
+"#view_calenderOneTimeEvent":{
+	top: '135',
+	left: '0',
+	//right:'30',
+	backgroundColor: '#eef2f5',
+	//layout: 'horizontal',
+	width: '45%',
+	height: '30'
+},
+
+"#img_calenderOneTimeEvent":{
+
+	//top: '5',
+	//backgroundColor: '#CCC',
+	image: '/images/calender.png',
+	height: '10',
+	left: '10',
+	width: '10'
+}
+"#lbl_calenderOneTimeEvent":{
+
+	left: '30',
+	text: 'DD-MM-YYYY',
+	color: '#000000',
+	font: {
+		fontSize: '12sp'
+	},
+	//textAlign: 'center',
+	//top: '0',
+	width: '60%',
+	height: '15'
+},
+
+"#view_calenderRepeatedEvents":{
+	top: '135',
+	left: '50%',
+	right: '30',
+	backgroundColor: '#eef2f5',
+	//layout: 'horizontal',
+	width: '45%',
+	height: '30'
+},
+
+"#img_calenderRepeatedEvents":{
+	//top: '5',
+	//backgroundColor: '#CCC',
+	image: '/images/calender.png',
+	height: '10',
+	left: '10',
+	width: '10'
+}
+"#lbl_calenderRepeatedEvents":{
+	left: '30',
+	text: 'DD-MM-YYYY',
+	color: '#000000',
+	font: {
+		fontSize: '12sp'
+	},
+	//textAlign: 'center',
+	top: '5',
+	width: '60%',
+	height: '15'
+},
+
+
+"#lbl_description":{
+	left: '0',
+	text: 'Description',
+	color: '#000000',
+	font: {
+		fontSize: '18sp'
+	},
+	//textAlign: 'center',
+	top: '175',
+	width: '60%',
+	height: '30'
+},
+
+
+"#ta_description":{
+	top: '215',
+	left: '0',
+	right: '0',
+	hintText: 'Enter some details about EVENT',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	backgroundColor: '#eef2f5',
+	font: {
+		fontSize: '14sp'
+	},
+	//hintTextColor: '#DCDCDC',
+	//backgroundImage: '/images/input.png',
+	width:Titanium.UI.FILL,
+	height: '135'
+},
+
+"#btn_post":{
+	width: Titanium.UI.FILL,
+	top: '20',
+	left: '30',
+	right: '30',
+	bottom: '20',
+	backgroundColor: '#E9477E',
+	title: 'POST',
+	borderRadius: '3',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	height: '40'
+},
+
+"#view_tabBar":{
+	bottom: '0',
+	layout: 'horizontal',
+	backgroundImage: '/images/tabsback.png',
+	width:Titanium.UI.FILL,
+	height: '50'
+},
+
+"#view_imgHome":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgEvents":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgUser":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgClose":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#img_home":{
+	//top: '5',
+	image: '/images/home.png',
+	width: '40',
+	height: '40'
+},
+"#img_events":{
+	//top: '5',
+	image: '/images/dollar.png',
+	width: '40',
+	height: '40'
+},
+"#image_user":{
+	//top: '5',
+	image: '/images/user.png',
+	width: '40',
+	height: '40'
+},
+"#img_close":{
+	//top: '5',
+	image: '/images/close.png',
+	width: '40',
+	height: '40'
+},
+
+

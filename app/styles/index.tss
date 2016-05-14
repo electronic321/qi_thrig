@@ -1,5 +1,6 @@
 "#self": {
-	backgroundColor: '#FFFFFF'
+	backgroundColor: '#FFFFFF',
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
 },
 
 "#scrollView": {
@@ -24,8 +25,11 @@
 	paddingLeft: '10',
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
-	height:Titanium.UI.SIZE
+	height:'40'
 },
 
 "#tf_password":{
@@ -39,8 +43,11 @@
 	passwordMask: true,
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
-	height:Titanium.UI.SIZE
+	height:'40'
 },
 
 "#btn_signIn":{
@@ -52,11 +59,11 @@
 	backgroundColor: '#E9477E',
 	title: 'Sign In',
 	borderRadius: '3',
-	color: '#000000',
+	color: '#FFFFFF',
 	font: {
 		fontSize: '16sp'
 	},
-	height: '45'
+	height: '40'
 },
 
 "#lbl_forgetPassword":{
@@ -75,13 +82,13 @@
 	backgroundColor: '#E9477E',
 	title: 'Sign Up',
 	borderRadius: '3',
-	color: '#000000',
+	color: '#FFFFFF',
 	font: {
 		fontSize: '16sp'
 	},
 	top: '10',
 	left: '30',
-	height: '45',
+	height: '40',
 	right: '30'
 },
 
@@ -89,8 +96,7 @@
 	right: '30',
 	color: '#000000',
 	font: {
-		fontSize: '14sp',
-		//fontWeight: 'bold'
+		fontSize: '14sp'
 	},
 	textAlign: 'center',
 	top: '4',

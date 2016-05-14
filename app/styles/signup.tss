@@ -1,5 +1,6 @@
 "#self": {
-	backgroundColor: '#FFFFFF'
+	backgroundColor: '#FFFFFF',
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
 },
 
 "#img_background":{
@@ -19,7 +20,7 @@
 },
 
 "#lbl_signup":{
-	top:'5',
+	top: '5',
 	left: '30',
 	text: 'SIGN UP',
 	color: '#E9477E',
@@ -42,21 +43,9 @@
 	paddingLeft: '10',
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
-	width:Titanium.UI.FILL,
-	height:Titanium.UI.SIZE
-},
-
-"#tf_zipCode":{
-	top: '5',
-	left: '30',
-	right: '30',
-	hintText: 'Zip Code',
-	color: "#000000",
-	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
-	paddingLeft: '10',
-	passwordMask: true,
-	hintTextColor: '#DCDCDC',
-	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE
 },
@@ -71,6 +60,26 @@
 	paddingLeft: '10',
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE
+},
+"#tf_zipCode":{
+	top: '5',
+	left: '30',
+	right: '30',
+	hintText: 'Zip Code',
+	color: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	passwordMask: true,
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE
 },
@@ -86,6 +95,9 @@
 	passwordMask: true,
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE
 },
@@ -102,13 +114,16 @@
 	passwordMask: true,
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE
 },
 
 "#lbl_businessSignup":{
 	left: '30',
-	text: 'SKIP IF NOT BUSINESS AND GOTO SIGN UP !',
+	text: 'SKIP IF NOT BUSINESS USER !',
 	color: '#E9477E',
 	font: {
 		fontSize: '16sp'
@@ -118,30 +133,39 @@
 	height: '30'
 },
 
-"#tf_businessCategory":{
+"#lbl_businessCategory":{
 	top: '5',
 	left: '30',
 	right: '30',
-	hintText: 'Enter Name - your Business or Personal',
-	color: "#000000",
-	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
-	paddingLeft: '10',
-	hintTextColor: '#DCDCDC',
-	backgroundImage: '/images/input.png',
+	text: 'Click to Choose Your Business Category',
+	backgroundColor: "#000000",
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	//paddingLeft: '10',
+	// hintTextColor: '#DCDCDC',
+	// backgroundImage: '/images/input.png',
+	//
+	color: 'white',
+	font: {
+		fontSize: '16sp'
+	},
 	width:Titanium.UI.FILL,
-	height:Titanium.UI.SIZE
+	height:'40'
 },
 
 "#tf_streetAddress":{
 	top: '5',
 	left: '30',
 	right: '30',
-	hintText: 'Zip Code',
+	hintText: 'Business Street Address',
 	color: "#000000",
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE
 },
@@ -150,12 +174,16 @@
 	top: '5',
 	left: '30',
 	right: '30',
-	hintText: 'Phone Number',
+	hintText: 'Business Phone Number',
 	color: "#000000",
 	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
+
+	font: {
+		fontSize: '14sp'
+	},
 	width:Titanium.UI.FILL,
 	height:Titanium.UI.SIZE
 },
@@ -173,5 +201,12 @@
 	left: '30',
 	height: '45',
 	right: '30'
+},
+
+"#view_space":{
+	top: '0',
+	left: '0',
+	width: Titanium.UI.FILL,
+	height: '20'
 },
 

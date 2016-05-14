@@ -4,16 +4,16 @@
 		<ScrollView id="scroll_signup" >
 			<Label id="lbl_signup"></Label>
 			<TextField id="tf_userName"></TextField>
-			<TextField id="tf_zipCode"></TextField>
 			<TextField id="tf_email"></TextField>
+			<TextField id="tf_zipCode"></TextField>
 			<TextField id="tf_password"></TextField>
 			<TextField id="tf_verifyPassword"></TextField>
 			<Label id="lbl_businessSignup"></Label>
-			<TextField id="tf_businessCategory"></TextField>
+			<Label id="lbl_businessCategory"></Label>
 			<TextField id="tf_streetAddress"></TextField>
 			<TextField id="tf_phoneNumber"></TextField>
 			<Button id="btn_signUp"></Button>
-
+			<View id="view_space"></View>
 		</ScrollView>
 	</Window>
 </Alloy>

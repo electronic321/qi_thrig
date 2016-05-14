@@ -1,5 +1,7 @@
 "#self": {
-	backgroundColor: '#FFFFFF'
+	backgroundColor: '#FFFFFF',
+		windowSoftInputMode :Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN,
+
 },
 
 "#view_topBar":{
@@ -10,7 +12,7 @@
 	height: '40'
 },
 "#lbl_events":{
-	left: '40',
+	left: '20',
 	text: 'DEALS & EVENTS',
 	color: '#FFFFFF',
 	font: {
@@ -22,11 +24,11 @@
 	height: '30'
 },
 
-"#view_searchBar":{
+"#view_welcome":{
 	top: '40',
-	//layout: 'horizontal',
+	layout: 'horizontal',
 	width:Titanium.UI.FILL,
-	height: Titanium.UI.SIZE
+	height: '30'
 },
 
 "#lbl_welcome":{
@@ -35,10 +37,10 @@
 	text: 'Welcome',
 	color: "#000000",
 	font: {
-		fontSize: '14sp'
+		fontSize: '16sp'
 	},
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
-	width: '80',
+	width: '70',
 	height: '30'
 },
 
@@ -46,44 +48,298 @@
 
 "#lbl_userName":{
 	top: '0',
-	left: '90',
-	text: 'Muhammad Sabir !',
+	left: '0',
+	text: 'Umair Ahmed !',
 	color: '#E9477E',
 	font: {
-		fontSize: '14sp'
+		fontSize: '16sp'
 	},
 	//textAlign: 'center',
 	width:Titanium.UI.Size,
 	height: '30'
 },
 
-"#search_searchBar":{
-	top: '35',
+"#view_searchBar":{
 	left: '20',
+	top: '70',
+	layout: 'horizontal',
+	right: '20',
+	height: '40'
+},
+
+"#view_search":{
+	//top: '70',
+	borderColor: '#000000',
+	borderWidth: '0.5',
+	left: '0',
+	width: '69.75%',
+	height: '40'
+},
+
+"#tf_searchBar":{
+	top: '0',
+	left: '0',
 	color: "#000000",
-	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
-	hintTextColor: '#DCDCDC',
-	backgroundImage: '/images/input.png',
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	//hintTextColor: '#DCDCDC',
+	//backgroundImage: '/images/input.png',
 	hintText: 'Event Search ...',
-	paddingLeft: '10',
-	right: '100',
-	width: '300',
+	hintTextColor: '#CCC',
+	font: {
+		fontSize: '14sp'
+	},
+	height: '40',
+	width: Titanium.UI.FILL
+},
+
+"#view_imgNeighbour":{
+	//top: '70',
+	borderColor: '#000000',
+	borderWidth: '0.5',
+	width: '14.75%',
 	height: '40'
 },
 
 "#img_searchNeighbour":{
-	top: '35',
-	left: '300',
+	//top: '10',
+	//backgroundColor: '#CCC',
 	image: '/images/search_neighbour.png',
-	width: '40',
-	height: '40'
+	height: '20'
 }
 
-"#img_searchIcon":{
-	top: '35',
-	left: '340',
+"#view_imgSearch":{
+	//top: '70',
 	backgroundColor: '#CCC',
+	borderColor: '#000000',
+	borderWidth: '0.5',
+	width: '14.75%',
+	height: '40'
+},
+
+"#img_searchIcon":{
+	//top: '10',
 	image: '/images/search_icon.png',
+	height: '20'
+},
+
+
+
+
+"#view_dealsandEvents":{
+	top: '120',
+	left: '0',
+	layout: 'horizontal',
+	backgroundColor: '#000000',
+	width:Titanium.UI.FILL,
+	height: '65'
+},
+
+"#view_textDeals":{
+	top: '0',
+	left: '20',
+	width: '47.75%',
+	height: '60'
+},
+
+
+"#lbl_dealsandEvents":{
+	top: '10',
+	left: '0',
+	text: 'DEALS & EVENTS',
+	color: "#FFFFFF",
+	font: {
+		fontSize: '18sp'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	height: '20'
+},
+
+"#img_refresh":{
+	top: '40',
+	left: '0',
+	image: '/images/refreshDate.png',
+	width: '20',
+	height: '20'
+},
+
+"#lbl_date":{
+	top: '35',
+	left: '35',
+	text: 'Monday, May 9,2016',
+	color: "#FFFFFF",
+	font: {
+		fontSize: '10sp'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	height: '30'
+},
+
+"#view_imgView":{
+	top: '0',
+	left: '0',
+	width: '14.75%',
+	height: '60'
+},
+
+"#img_view":{
+	top: '10',
+	//left: '0',
+	image: '/images/view.png',
+	height: '30'
+},
+
+"#lbl_view":{
+	top: '40',
+	//left: '35',
+	text: 'View',
+	color: "#FFFFFF",
+	//textAlign:'center',
+	font: {
+		fontSize: '10sp'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	width: Titanium.UI.SIZE,
+	height: '20'
+},
+
+
+"#view_imgAdd":{
+	top: '0',
+	left: '0',
+	width: '14.75%',
+	height: '60'
+},
+
+"#img_add":{
+	top: '10',
+	//left: '0',
+	image: '/images/add.png',
+	height: '30'
+},
+"#lbl_add":{
+	top: '40',
+	//left: '35',
+	text: 'Add',
+	color: "#FFFFFF",
+	//textAlign:'center',
+	font: {
+		fontSize: '10sp'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	height: '20'
+},
+
+
+"#view_imgPickInterest":{
+	top: '0',
+	left: '0',
+	width: '16.75%',
+	height: '60'
+},
+
+"#img_pickInterest":{
+	top: '10',
+	//left: '0',
+	image: '/images/interest.png',
+	height: '30'
+},
+"#lbl_interest":{
+	top: '40',
+	//left: '35',
+	text: 'Pick Interest',
+	color: "#FFFFFF",
+	textAlign:'center',
+	font: {
+		fontSize: '10sp'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	height: '20'
+},
+
+"#scrollableView":{
+	top: '185',
+	left: '0',
+	right: '0',
+	bottom: '50'
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"#view_tabBar":{
+	bottom: '0',
+	layout: 'horizontal',
+	backgroundImage: '/images/tabsback.png',
+	width:Titanium.UI.FILL,
+	height: 50
+},
+
+"#view_imgHome":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgEvents":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgUser":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#view_imgClose":{
+	left: '0',
+	width: '24.75%',
+	height: '50'
+},
+
+"#img_home":{
+	//top: '5',
+	image: '/images/home.png',
 	width: '40',
 	height: '40'
-}
+},
+"#img_events":{
+	//top: '5',
+	image: '/images/dollar.png',
+	width: '40',
+	height: '40'
+},
+"#image_user":{
+	//top: '5',
+	image: '/images/user.png',
+	width: '40',
+	height: '40'
+},
+"#img_close":{
+	//top: '5',
+	image: '/images/close.png',
+	width: '40',
+	height: '40'
+},
+
+
+
+
