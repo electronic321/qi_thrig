@@ -13,7 +13,6 @@ $.scrollableView.views = [view1, view2, view3, view4, view5, view6, view7];
 $.view_imgAdd.addEventListener('click', function(e) {
 	var addEvents = Alloy.createController('addEvents').getView();
 	if (Ti.Android) {
-		$.self.close();
 		addEvents.open();
 
 	} else {
@@ -24,7 +23,6 @@ $.view_imgAdd.addEventListener('click', function(e) {
 $.tf_searchBar.addEventListener('click', function(e) {
 	var search = Alloy.createController('search').getView();
 	if (Ti.Android) {
-		//$.self.close();
 		search.open();
 
 	} else {
@@ -35,7 +33,6 @@ $.tf_searchBar.addEventListener('click', function(e) {
 $.img_searchIcon.addEventListener('click', function(e) {
 	var search = Alloy.createController('search').getView();
 	if (Ti.Android) {
-		//$.self.close();
 		search.open();
 
 	} else {

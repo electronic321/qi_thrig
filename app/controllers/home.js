@@ -1,5 +1,3 @@
-
-
 $.view_imgEvents.addEventListener('click', function(e) {
 	var events = Alloy.createController('events').getView();
 	if (Ti.Android) {
@@ -27,12 +25,15 @@ $.view_imgUser.addEventListener('click', function(e) {
 });
 
 $.btn_addEvent.addEventListener('click', function(e) {
-	var addEvents = Alloy.createController('addEvents').getView();
-	if (Ti.Android) {
-		
-		addEvents.open();
-	} else {
 
+	if (Ti.App.Properties.getBool('isLogin', true)) {
+		var addEvents = Alloy.createController('addEvents').getView();
+		if (Ti.Android) {
+
+			addEvents.open();
+		}
+	} else {
+		alert("Please Signup or Signin to add an Event");
 	}
 });
 

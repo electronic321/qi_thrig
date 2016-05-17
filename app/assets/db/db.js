@@ -11,48 +11,56 @@ exports.createTable = function(favorites) {
 
 exports.Insert = function(zipcode) {
 	var db = Ti.Database.open('biotiful');
-	db.execute('UPDATE zipcodes SET zipcode = '+ zipcode +' WHERE id = 84' );
+	db.execute('UPDATE zipcodes SET zipcode = ' + zipcode + ' WHERE id = 84');
 	db.close();
 };
 
 exports.BusinessSearch = function() {
-	var db = Ti.Database.open('biotiful');
-	var PtTable = db.execute('select catname from categories');
-	var data = [];
-	var i = 0;
-	while (PtTable.isValidRow()) {
-		data.push(PtTable.fieldByName('catname'));
-		i++;
-		PtTable.next();
-	};
-	db.close();
-	return data;
+	try {
+		var db = Ti.Database.open('biotiful');
+		var PtTable = db.execute('select catname,catid from categories');
+		var data = [];
+		var i = 0;
+		while (PtTable.isValidRow()) {
+			data.push({
+				catname : PtTable.fieldByName('catname'),
+				catid : PtTable.fieldByName('catid'),
+			});
+			i++;
+			PtTable.next();
+		};
+
+	} catch(err) {
+		alert("Inside Catch block ... Check your code");
+	} finally {
+		if (db != null) {
+			db.close();
+		}
+		return data;
+	}
 };
 
-
 exports.Show = function() {
+	try{
 	var db = Ti.Database.open('biotiful');
 	var PtTable = db.execute('select zipcode from zipcodes');
 	var data = [];
 	var i = 0;
 	while (PtTable.isValidRow()) {
 		data.push({
-			//id : PtTable.fieldByName('id'),
 			zipcode : PtTable.fieldByName('zipcode'),
-			//nameToShow : PtTable.fieldByName('nameToShow'),
 		});
 		i++;
 		PtTable.next();
-	};
-	db.close();
-	return data;
-};
-
-exports.Delete = function(id) {
-	var db = Ti.Database.open('biotiful');
-	//var f2d = db.execute('SELECT FROM favorites WHERE FASAL LIKE ' + fasal);
-	db.execute('DELETE FROM favorites WHERE id = ' + id);
-	db.close();
+	};}
+	catch(err){
+		alert("Inside Catch block, check your code");
+	}
+finally{
+	if (db != null) {
+		db.close();
+	}
+	return data;}
 };
 
 exports.Like = function(favorites, toFind) {

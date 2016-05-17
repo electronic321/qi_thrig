@@ -74,7 +74,6 @@
 	color: "#000000",
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	paddingLeft: '10',
-	passwordMask: true,
 	hintTextColor: '#DCDCDC',
 	backgroundImage: '/images/input.png',
 	font: {
@@ -137,6 +136,7 @@
 	top: '5',
 	left: '30',
 	right: '30',
+	textAlign:'center',
 	text: 'Click to Choose Your Business Category',
 	backgroundColor: "#000000",
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
