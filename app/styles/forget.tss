@@ -1,0 +1,58 @@
+"#self": {
+	backgroundColor: '#FFFFFF',
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
+},
+
+"#view_topBar":{
+	backgroundColor: '#E9477E',
+	layout: 'horizontal',
+	width:Titanium.UI.FILL,
+	top: '0',
+	height: '40'
+},
+
+"#lbl_topBar":{
+	text: 'Enter your email address below',
+	left: '30',
+	color: '#FFFFFF',
+	font: {
+		fontSize: '16sp',
+		fontWeight: 'bold'
+	},
+	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	//paddingLeft: '3',
+	//backgroundImage: '/images/input.png',
+	width: Titanium.UI.FILL,
+	height: '40'
+},
+
+"#tf_email":{
+	top: '50',
+	left: '30',
+	right: '30',
+	hintText: 'Email Address',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	paddingLeft: '10',
+	hintTextColor: '#DCDCDC',
+	backgroundImage: '/images/input.png',
+	font: {
+		fontSize: '14sp'
+	},
+	width:Titanium.UI.FILL,
+	height: '40'
+},
+
+"#btn_send":{
+	left: '70',
+	right: '70',
+	top: '110',
+	backgroundColor: '#E9477E',
+	title: 'Submit',
+	borderRadius: '3',
+	color: '#000000',
+	font: {
+		fontSize: '14sp'
+	},
+	height: '40'
+},

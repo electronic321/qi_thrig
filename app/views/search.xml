@@ -1,10 +1,15 @@
 <Alloy>
 	<Window id="self">
-		<View id="view_topBar">
-			<Label id="lbl_search">
-			</Label>
-			<Label id="lbl_searchType">
-			</Label>
-		</View>
+		<!-- <ListView id="listView">
+			<ListSection name="listSection" />
+		</ListView> -->
+		<!-- <View id="view_topBar">
+		<Label id="lbl_search">
+		</Label>
+		<Label id="lbl_searchType">
+		</Label>
+		</View> -->
+		<!-- <ListView id="listView">
+		</ListView> -->
 	</Window>
 </Alloy>

@@ -83,7 +83,7 @@
 	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
 	//hintTextColor: '#DCDCDC',
 	//backgroundImage: '/images/input.png',
-	hintText: 'Event Search ...',
+	hintText: 'Enter Zipcode ...',
 	hintTextColor: '#CCC',
 	font: {
 		fontSize: '14sp'

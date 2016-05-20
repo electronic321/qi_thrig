@@ -1,4 +1,8 @@
+		
 var day = require('/views/day');
+var db = require('/db/db');
+var searching = db.Show();
+alert(searching.length);
 
 var view1 = day.day('white');
 var view2 = day.day('white');
@@ -21,7 +25,10 @@ $.view_imgAdd.addEventListener('click', function(e) {
 });
 
 $.tf_searchBar.addEventListener('click', function(e) {
-	var search = Alloy.createController('search').getView();
+	var search = Alloy.createController('search', {
+		//search : $.tf_searchBar
+		searchingText : searching
+	}).getView();
 	if (Ti.Android) {
 		search.open();
 
@@ -32,6 +39,7 @@ $.tf_searchBar.addEventListener('click', function(e) {
 
 $.img_searchIcon.addEventListener('click', function(e) {
 	var search = Alloy.createController('search').getView();
+
 	if (Ti.Android) {
 		search.open();
 

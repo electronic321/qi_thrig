@@ -11,4 +11,5 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 
 Alloy.Globals.catid = null;
+Alloy.Globals.userName = null;
 

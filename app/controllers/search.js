@@ -1,54 +1,87 @@
-var db = require('/db/db');
+var args = arguments[0] || {};
 
-var self = this.getView();
+// var db = require('/db/db');
 
-var search = Titanium.UI.createSearchBar({
-	barColor : '#000',
-	left : '10',
-	right : '10',
-	showCancel : true,
-	height : '43',
-	top : '100',
-});
-search.addEventListener('cancel', function() {
-	search.blur();
-	//$.self.close();
-});
-// for textSearch, use the change event to update the search value
-// search.addEventListener('change', function(e){
-//     listView.searchText = e.value;
-// });
+//var self = this.getView();
+var tableData = [];
+var zipcode = [];
+var city = [];
+var state = [];
+// var searching = db.Show();
 
-var searchZipcodes = db.Show();
-var listView = Ti.UI.createListView({
-	searchView : search,
-	caseInsensitiveSearch : true
+var searching = args.searchingText;
+
+//alert(JSON.stringify(searching));
+var tableView = Ti.UI.createTableView({
+	separatorColor : 'transparent',
+	data : tableData,
+	//search : tf_search,
+	filterAttribute : 'zipcode' + 'city' + 'state',
+	top : Ti.Android ? '65' : '10'
 });
-// for textSearch, add the search bar or text field as a header view
-// var listView = Ti.UI.createListView({headerView: search, caseInsensitiveSearch: true});
-var listSection = Ti.UI.createListSection();
-var data = [];
-for (var i = 0; i < searchZipcodes.length; i++) {
-	data.push({
-		properties : {
-			left : 20,
-			itemId : i,
-			title : searchZipcodes[i].zipcode,
-			color : '#000000',
-			searchableText : searchZipcodes[i].zipcode
-		}
+
+for (var i = 0; i < searching.length; i++) {
+
+	var row = Ti.UI.createTableViewRow({
+		//className : 'viewTitles',
+		//backgroundColor : '#FFFFFF',
+		//rowIndex : index,
+		height : 50,
 	});
+	tableView.add(row);
+
+	zipcode[i] = Ti.UI.createLabel({
+		text : searching[i].zipcode,
+		color : '#59585E',
+		font : {
+			fontSize : '16sp',
+			//fontWeight : 'bold'
+		},
+		//touchEnabled : false,
+		top : '0',
+		left : '20',
+		height : '40',
+		width : '60'
+		//right : '28%'
+	});
+	row.add(zipcode[i]);
+	tableData.push(row);
+
+	city[i] = Ti.UI.createLabel({
+		text : searching[i].city,
+		color : '#59585E',
+		font : {
+			fontSize : '16sp',
+			//fontWeight : 'bold'
+		},
+		//touchEnabled : false,
+		top : '0',
+		left : '20',
+		height : '40',
+		width : '60'
+		//right : '28%'
+	});
+	row.add(city[i]);
+	tableData.push(row);
+
+	state[i] = Ti.UI.createLabel({
+		text : searching[i].state,
+		color : '#59585E',
+		font : {
+			fontSize : '16sp',
+			//fontWeight : 'bold'
+		},
+		//touchEnabled : false,
+		top : '0',
+		left : '20',
+		height : '40',
+		width : '60'
+		//right : '28%'
+	});
+	row.add(state[i]);
+	tableData.push(row);
+
 }
-listSection.setItems(data);
-listView.addEventListener('itemclick', function(e) {
+self.add(tableView);
 
-	// args.lbl_businessCategory.text = categories[e.itemId].catname;
-	// Alloy.Globals.catid =categories[e.itemId].catid;
-	self.close();
-	//alert(e.itemId);
-
-});
-listView.sections = [listSection];
-self.add(listView);
-
-self.open();
+//self.open();

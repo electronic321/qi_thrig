@@ -3,9 +3,10 @@
 	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
 },
 
+
 "#view_topBar":{
 	top: '0',
-	left:'0',
+	left: '0',
 	backgroundColor: '#E9477E',
 	layout: 'horizontal',
 	width:Titanium.UI.FILL,
@@ -50,7 +51,7 @@
 	backgroundColor: 'white',
 	//layout: 'horizontal',
 	width:Titanium.UI.FILL,
-	height: '180'
+	height: '190'
 },
 
 
@@ -110,7 +111,7 @@
 	font: {
 		fontSize: '14sp'
 	},
-		height:'40',
+	height: '40',
 	width:Titanium.UI.FILL
 },
 
@@ -138,8 +139,8 @@
 	font: {
 		fontSize: '14sp'
 	},
-	width:'79.5%',
-	height:'40'
+	width: '79.5%',
+	height: '40'
 },
 
 "#img_interest":{
@@ -173,8 +174,8 @@
 	font: {
 		fontSize: '14sp'
 	},
-	width:'79.5%',
-	height:'40'
+	width: '79.5%',
+	height: '40'
 },
 "#img_subInterest":{
 	top: '15',
@@ -198,7 +199,7 @@
 		fontSize: '14sp'
 	},
 	width:Titanium.UI.FILL,
-	height:'40'
+	height: '40'
 },
 "#tf_streetAddress":{
 	top: '10',
@@ -214,7 +215,7 @@
 		fontSize: '14sp'
 	},
 	width:Titanium.UI.FILL,
-	height:'40'
+	height: '40'
 },
 "#tf_zipCode":{
 	top: '10',
@@ -230,7 +231,7 @@
 		fontSize: '14sp'
 	},
 	width:Titanium.UI.FILL,
-	height:'40'
+	height: '40'
 },
 "#tf_website":{
 	top: '10',
@@ -246,7 +247,7 @@
 		fontSize: '14sp'
 	},
 	width:Titanium.UI.FILL,
-	height:'40'
+	height: '40'
 },
 "#tf_phoneNumber":{
 	top: '10',
@@ -262,7 +263,7 @@
 		fontSize: '14sp'
 	},
 	width:Titanium.UI.FILL,
-	height:'40'
+	height: '40'
 },
 
 "#view_time":{
@@ -304,7 +305,7 @@
 	top: '25',
 	left: '0',
 	//right:'30',
-	backgroundColor:'#eef2f5',
+	backgroundColor: '#eef2f5',
 	//layout: 'horizontal',
 	width: '45%',
 	height: '30'
@@ -316,12 +317,12 @@
 	//backgroundColor: '#CCC',
 	image: '/images/clock.png',
 	height: '15',
-	left: '10',
+	left: '0',
 	width: '15'
 }
 "#lbl_TimeStart":{
 
-	left: '30',
+	left: '20',
 	text: '4 : 05 AM',
 	color: '#000000',
 	font: {
@@ -337,7 +338,7 @@
 	top: '25',
 	left: '50%',
 	right: '30',
-	backgroundColor:'#eef2f5',
+	backgroundColor: '#eef2f5',
 	//layout: 'horizontal',
 	width: '45%',
 	height: '30'
@@ -348,12 +349,11 @@
 	//backgroundColor: '#CCC',
 	image: '/images/clock.png',
 	height: '15',
-	left: '10',
-	width: '15',
-	
+	left: '0',
+	width: '15'
 }
 "#lbl_TimeEnd":{
-	left: '30',
+	left: '20',
 	text: '11 : 05 PM',
 	color: '#000000',
 	font: {
@@ -366,46 +366,46 @@
 },
 
 
-"#img_dontshowStartTime":{
-	top: '60',
+"#switch_dontShowStartTime":{
+	top: '65',
 	//backgroundColor: '#CCC',
-	image: '/images/clock.png',
-	height: '15',
+	//image: '/images/clock.png',
+	//height: '15',
 	left: '0',
-	width: '15'
+	//width: '15'
 }
 "#lbl_dontshowStartTime":{
-	top: '60',
-	left: '7%',
-	text: 'Donot Show Start Time',
+	top: '65',
+	left: '17%',
+	text: 'Hide Start Time',
 	color: '#000000',
 	font: {
-		fontSize: '10sp'
+		fontSize: '12sp'
 	},
 	//textAlign: 'center',
-	width: '40%',
-	height: '15'
+	width: '29.75%',
+	height: '20'
 },
 
-"#img_dontShowEndTime":{
-	top: '60',
+"#switch_dontShowEndTime":{
+	top: '65',
 	//backgroundColor: '#CCC',
-	image: '/images/clock.png',
-	height: '15',
+	//image: '/images/clock.png',
+	//height: '15',
 	left: '50%',
-	width: '15'
+	//width: '15'
 }
 "#lbl_dontShowEndTime":{
-	top: '60',
-	left: '57%',
-	text: 'Donot Show End Time',
+	top: '65',
+	left: '67%',
+	text: 'Hide End Time',
 	color: '#000000',
 	font: {
-		fontSize: '10sp'
+		fontSize: '12sp'
 	},
 	//textAlign: 'center',
 	width: '40%',
-	height: '15'
+	height: '20'
 },
 
 "#lbl_date":{
@@ -416,7 +416,7 @@
 		fontSize: '12sp'
 	},
 	//textAlign: 'center',
-	top: '80',
+	top: '95',
 	width: '50',
 	height: '20'
 },
@@ -425,59 +425,59 @@
 
 
 
-"#img_oneTimeEvent":{
-	top: '110',
+"#switch_oneTime":{
+	top: '115',
 	//backgroundColor: '#CCC',
-	image: '/images/clock.png',
-	height: '15',
+	//image: '/images/clock.png',
+	//height: '15',
 	left: '0',
-	width: '15'
+	//width: '15'
 }
 "#lbl_oneTimeEvent":{
-	top: '110',
-	left: '7%',
+	top: '115',
+	left: '17%',
 	text: 'One Time Event',
 	color: '#000000',
 	font: {
-		fontSize: '10sp'
+		fontSize: '12sp'
 	},
 	//textAlign: 'center',
-	width: '40%',
-	height: '15'
+	width: '29.75%',
+	height: '20'
 },
 
-"#img_repeatedEvents":{
-	top: '110',
+"#switch_repeatedEvents":{
+	top: '115',
 	//backgroundColor: '#CCC',
-	image: '/images/clock.png',
-	height: '15',
+	//image: '/images/clock.png',
+	//height: '15',
 	left: '50%',
-	width: '15'
+	//width: '15'
 }
 "#lbl_repeatedEvents":{
-	top: '110',
-	left: '57%',
-	text: 'Events that repeats weekly',
+	top: '115',
+	left: '67%',
+	text: 'Repeated Events',
 	color: '#000000',
 	font: {
-		fontSize: '10sp'
+		fontSize: '12sp'
 	},
 	//textAlign: 'center',
-	width: '40%',
-	height: '15'
+	width: '29.75%',
+	height: '20'
 },
 
 
 
 
 "#view_calenderOneTimeEvent":{
-	top: '135',
+	top: '150',
 	left: '0',
 	//right:'30',
 	backgroundColor: '#eef2f5',
 	//layout: 'horizontal',
 	width: '45%',
-	height: '30'
+	height: '40'
 },
 
 "#img_calenderOneTimeEvent":{
@@ -485,14 +485,14 @@
 	//top: '5',
 	//backgroundColor: '#CCC',
 	image: '/images/calender.png',
-	height: '10',
-	left: '10',
-	width: '10'
+	height: '20',
+	left: '0',
+	width: '20'
 }
-"#lbl_calenderOneTimeEvent":{
+"#tf_calenderOneTimeEvent":{
 
 	left: '30',
-	text: 'DD-MM-YYYY',
+	value: 'MM-DD-YYYY',
 	color: '#000000',
 	font: {
 		fontSize: '12sp'
@@ -500,38 +500,38 @@
 	//textAlign: 'center',
 	//top: '0',
 	width: '60%',
-	height: '15'
+	height: '40'
 },
 
 "#view_calenderRepeatedEvents":{
-	top: '135',
+	top: '150',
 	left: '50%',
 	right: '30',
 	backgroundColor: '#eef2f5',
 	//layout: 'horizontal',
 	width: '45%',
-	height: '30'
+	height: '40'
 },
 
 "#img_calenderRepeatedEvents":{
 	//top: '5',
 	//backgroundColor: '#CCC',
 	image: '/images/calender.png',
-	height: '10',
-	left: '10',
-	width: '10'
+	height: '20',
+	left: '0',
+	width: '20'
 }
-"#lbl_calenderRepeatedEvents":{
+"#tf_calenderRepeatedEvents":{
 	left: '30',
-	text: 'DD-MM-YYYY',
+	value: 'MM-DD-YYYY',
 	color: '#000000',
 	font: {
 		fontSize: '12sp'
 	},
 	//textAlign: 'center',
-	top: '5',
+	top: '0',
 	width: '60%',
-	height: '15'
+	height: '40'
 },
 
 
@@ -543,14 +543,14 @@
 		fontSize: '18sp'
 	},
 	//textAlign: 'center',
-	top: '175',
+	top: '200',
 	width: '60%',
 	height: '30'
 },
 
 
 "#ta_description":{
-	top: '215',
+	top: '240',
 	left: '0',
 	right: '0',
 	hintText: 'Enter some details about EVENT',
@@ -564,7 +564,7 @@
 	//hintTextColor: '#DCDCDC',
 	//backgroundImage: '/images/input.png',
 	width:Titanium.UI.FILL,
-	height: '135'
+	height: '140'
 },
 
 "#btn_post":{

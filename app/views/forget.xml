@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="self" >
+		<View id="view_topBar">
+			<Label id="lbl_topBar">
+			</Label>
+		</View>
+		<TextField id="tf_email">
+		</TextField>
+		<Button id = "btn_send"></Button>
+		
+	</Window>
+</Alloy>

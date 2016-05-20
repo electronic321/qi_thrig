@@ -1,7 +1,6 @@
 "#self": {
 	backgroundColor: '#FFFFFF',
-		windowSoftInputMode :Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN,
-
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
 },
 
 "#view_topBar":{
@@ -205,7 +204,7 @@
 },
 "#btn_logout":{
 	left: '50%',
-	right:'5%',
+	right: '5%',
 	top: '10',
 	backgroundColor: '#E9477E',
 	title: 'LOGOUT',

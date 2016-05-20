@@ -1,39 +1,4 @@
 "#self": {
 	backgroundColor: '#FFFFFF',
-		windowSoftInputMode :Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN,
-
-},
-
-"#view_topBar":{
-	top: '0',
-	backgroundColor: '#E9477E',
-	layout: 'horizontal',
-	width:Titanium.UI.FILL,
-	height: '40'
-},
-"#lbl_search":{
-	left: '30',
-	text: 'SEARCH',
-	color: '#FFFFFF',
-	font: {
-		fontSize: '18sp',
-		fontWeight: 'bold'
-	},
-	//textAlign: 'center',
-	top: '5',
-	height: '30',
-	width:Titanium.UI.SIZE
-},
-
-"#lbl_searchType":{
-	left: '10',
-	text: '(Zip, Neighbourhood or City)',
-	color: '#FFFFFF',
-	font: {
-		fontSize: '12sp',
-		//fontWeight: 'bold'
-	},
-	//textAlign: 'center',
-	top: '5',
-	height: '30'
-},
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}
