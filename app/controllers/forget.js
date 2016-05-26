@@ -1,10 +1,10 @@
-var forgetPasswordRequest = require('/api/forgetPassword');
+var forgetPasswordRequest = require('/api/forgotPassword');
 
 $.btn_send.addEventListener('click', function(e) {
-	forgetPasswordRequest.forgetPassword({
+	forgetPasswordRequest.forgotPassword({
 		email : $.tf_email.value,
 	}, function(load) {
-		alert("Password sent to" + $.args.email);
+		alert("Password sent to" + $.tf_email.value);
 		$.self.close();
 
 	}, function(error) {

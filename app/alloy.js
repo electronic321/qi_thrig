@@ -12,4 +12,4 @@
 
 Alloy.Globals.catid = null;
 Alloy.Globals.userName = null;
-
+Alloy.Globals.interestId = null;

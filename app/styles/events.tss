@@ -76,21 +76,6 @@
 	height: '40'
 },
 
-"#tf_searchBar":{
-	top: '0',
-	left: '0',
-	color: "#000000",
-	//keyboardType: Titanium.UI.KEYBOARD_EMAIL,
-	//hintTextColor: '#DCDCDC',
-	//backgroundImage: '/images/input.png',
-	hintText: 'Enter Zipcode ...',
-	hintTextColor: '#CCC',
-	font: {
-		fontSize: '14sp'
-	},
-	height: '40',
-	width: Titanium.UI.FILL
-},
 
 "#view_imgNeighbour":{
 	//top: '70',
@@ -106,6 +91,22 @@
 	image: '/images/search_neighbour.png',
 	height: '20'
 }
+
+"#tf_searchBar":{
+	top: '0',
+	left: '0',
+	color: "#000000",
+	keyboardType: Titanium.UI.KEYBOARD_EMAIL,
+	backgroundImage: '/images/input.png',
+	hintText: 'Enter Zipcode ...',
+	hintTextColor: '#CCC',
+	font: {
+		fontSize: '14sp'
+	},
+	height: '40',
+	width: Titanium.UI.FILL
+},
+
 
 "#view_imgSearch":{
 	//top: '70',

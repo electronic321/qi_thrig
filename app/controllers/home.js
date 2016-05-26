@@ -8,6 +8,7 @@ $.view_imgEvents.addEventListener('click', function(e) {
 	}
 });
 
+
 $.btn_go.addEventListener('click', function(e) {
 	var events = Alloy.createController('events').getView();
 	if (Ti.Android) {
@@ -16,6 +17,7 @@ $.btn_go.addEventListener('click', function(e) {
 
 	}
 });
+
 $.view_imgUser.addEventListener('click', function(e) {
 	var profile = Alloy.createController('profile').getView();
 	if (Ti.Android) {

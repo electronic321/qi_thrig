@@ -1,34 +1,31 @@
 var signinRequest = require('/api/signin');
 
 $.btn_signIn.addEventListener('click', function(e) {
-		if( $.tf_email.value == ''){
-			alert('Email is missing.');
-			return ;
-		}
+	if ($.tf_email.value == '') {
+		alert('Email is missing.');
+		return;
+	}
 
-		if( $.tf_password.value == ''){
-			alert('Password is missing.');
-			return ;
-		}
+	if ($.tf_password.value == '') {
+		alert('Password is missing.');
+		return;
+	}
 	Ti.App.Properties.setBool('isLogin', true);
 	signinRequest.signin({
 		email : $.tf_email.value,
 		password : $.tf_password.value,
-	} 
-	, function(load) {
-		//	alert(JSON.stringify(load.source.responseText));
-		//alert(JSON.stringify(load));
+	}, function(load) {
 
 		Ti.App.Properties.setObject('loginResponse', load);
-		alert(JSON.stringify(load));
 		var home = Alloy.createController('home').getView();
 		if (Ti.Android) {
-			home.open();
-			//$.self.close();
-
+		home.open();
+		//$.self.close();
+		
 		} else {
-
+		
 		}
+
 	}, function(error) {
 		alert('Error : ' + JSON.stringify(error));
 
@@ -46,7 +43,7 @@ $.btn_signUp.addEventListener('click', function(e) {
 });
 
 $.lbl_skipLogin.addEventListener('click', function(e) {
-	Ti.App.Properties.setBool('isLogin', false);
+	Ti.App.Properties.setBool('isLogin', true); // Make it false when you are donw with testing ... User cant add event if not logged in
 	var home = Alloy.createController('home').getView();
 	if (Ti.Android) {
 		home.open();

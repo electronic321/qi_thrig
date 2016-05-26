@@ -1,15 +1,18 @@
-if (Ti.App.Properties.getBool('dbFirstInstall', true)) {
-	Ti.Database.install('/db/thriggle.sqlite', 'biotiful').close();
-	Ti.App.Properties.setBool('dbFirstInstall', false);
-	
-}
+// if (Ti.App.Properties.getBool('dbFirstInstall', true)) {
+// Ti.Database.install('/db/thriggle.sqlite', 'biotiful').close();
+// Ti.App.Properties.setBool('dbFirstInstall', false);
+//
+// }
 
-exports.createTable = function(favorites) {
-	//alert('i am creating a table');
-	var db = Ti.Database.open('biotiful');
-	db.execute('CREATE TABLE IF NOT EXISTS ' + favorites + ' (id INTEGER PRIMARY KEY,  name TEXT, nameToShow TEXT)');
-	db.close();
-};
+var database = Ti.Database.install('/db/thriggle.sqlite', 'biotiful');
+database.close();
+
+// exports.createTable = function(favorites) {
+// //alert('i am creating a table');
+// var db = Ti.Database.open('biotiful');
+// db.execute('CREATE TABLE IF NOT EXISTS ' + favorites + ' (id INTEGER PRIMARY KEY,  name TEXT, nameToShow TEXT)');
+// db.close();
+// };
 
 //db.execute('INSERT INTO ' + favorites + ' (name, nameToShow)VALUES(?,?) ', name, nameToShow);
 
@@ -44,45 +47,48 @@ exports.BusinessSearch = function() {
 	}
 };
 
-exports.Show = function() {
-	try {
-		var db = Ti.Database.open('biotiful');
-		var PtTable = db.execute('select city,state,zipcode from zipcodes');
-		var dataSearch = [];
+exports.Like = function(toFind) {
+	var db = Ti.Database.open('biotiful');
+
+	// for searching string i.e. city or state
+	if (isNaN(toFind)) {
+						var PtTable = db.execute( 'SELECT distinct state,zipcode,city FROM zipcodes WHERE city LIKE "%' + toFind + '" LIMIT 300');
+
+		//var PtTable = db.execute('SELECT state, zipcode, city FROM  zipcodes  WHERE city LIKE "%' + toFind + '%"');
+		var data = [];
 		var i = 0;
 		while (PtTable.isValidRow()) {
-			dataSearch.push({
+			data.push({
+				state : PtTable.fieldByName('state'),
 				zipcode : PtTable.fieldByName('zipcode'),
 				city : PtTable.fieldByName('city'),
-				state : PtTable.fieldByName('state'),
 
 			});
 			i++;
 			PtTable.next();
 		};
-	} catch(err) {
-		alert("Inside Catch block, check your code");
-	} finally {
-		PtTable.close();
 		db.close();
+		return data;
 
-		return dataSearch;
+	} else {
+		//for searching zipcode or any integer value
+				var PtTable = db.execute( 'SELECT distinct state,zipcode,city FROM zipcodes WHERE zipcode LIKE "%' + toFind + '" LIMIT 300');
+
+		//var PtTable = db.execute('SELECT state, zipcode, city FROM  zipcodes  WHERE zipcode LIKE "%' + toFind + '%"');
+		var data = [];
+		var i = 0;
+		while (PtTable.isValidRow()) {
+			data.push({
+				state : PtTable.fieldByName('state'),
+				zipcode : PtTable.fieldByName('zipcode'),
+				city : PtTable.fieldByName('city'),
+
+			});
+			i++;
+			PtTable.next();
+		};
+		db.close();
+		return data;
 	}
-};
 
-// exports.Like = function(favorites, toFind) {
-// var db = Ti.Database.open('biotiful');
-// var PtTable = db.execute('SELECT * FROM ' + favorites + ' WHERE name LIKE "%' + toFind + '%"');
-// // var dataLike = [];
-// var i = 0;
-// while (PtTable.isValidRow()) {
-// dataLike.push({
-// name : PtTable.fieldByName('name')
-// });
-// i++;
-// PtTable.next();
-// };
-// db.close();
-// return dataLike;
-// };
-//
+};

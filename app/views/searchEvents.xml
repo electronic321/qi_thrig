@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="self">
+		<View id="view_topBar">
+			<Label id="lbl_topBar"></Label>
+		</View>
+		
+						<TextField id = "search"></TextField>
+
+	</Window>
+</Alloy>

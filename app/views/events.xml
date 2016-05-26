@@ -11,7 +11,7 @@
 		<View id="view_searchBar">
 
 			<View id="view_search">
-				<TextField id="tf_searchBar"></TextField>
+				<TextField id = "tf_searchBar"></TextField>
 			</View>
 			<View id="view_imgNeighbour">
 				<ImageView id="img_searchNeighbour"></ImageView>
@@ -44,14 +44,7 @@
 
 			</View>
 		</View>
-		
-		
-		<ScrollableView id="scrollableView" showPagingControl="true">
-			
-		</ScrollableView>
-		
-		
-		
+		<ScrollableView id="scrollableView" showPagingControl="true"></ScrollableView>
 		<View id="view_tabBar">
 			<View id="view_imgHome">
 				<ImageView id="img_home"></ImageView>
