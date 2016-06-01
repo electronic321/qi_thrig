@@ -1,4 +1,3 @@
-		
 var day = require('/views/day');
 var db = require('/db/db');
 //var searching = db.Show();
@@ -12,6 +11,22 @@ var view7 = day.day('white');
 
 $.scrollableView.views = [view1, view2, view3, view4, view5, view6, view7];
 
+// View (Event Locations)
+
+$.view_imgView.addEventListener('click', function(e) {
+	if ($.tf_searchBar.value != null) {
+		var location = Alloy.createController('location',{
+			tf_search : $.tf_searchBar
+		}).getView();
+
+		if (Ti.Android) {
+			location.open();
+		} else {
+			alert("Enter your zipcode or state above");
+		}
+	}
+});
+
 $.view_imgAdd.addEventListener('click', function(e) {
 	var addEvents = Alloy.createController('addEvents').getView();
 	if (Ti.Android) {
@@ -24,8 +39,7 @@ $.view_imgAdd.addEventListener('click', function(e) {
 
 $.tf_searchBar.addEventListener('click', function(e) {
 	var search = Alloy.createController('searchEvents', {
-		 tf_searchBar : $.tf_searchBar
-		//searchingText : searching
+		tf_searchBar : $.tf_searchBar
 	}).getView();
 	if (Ti.Android) {
 		search.open();
@@ -36,8 +50,9 @@ $.tf_searchBar.addEventListener('click', function(e) {
 });
 
 $.img_searchIcon.addEventListener('click', function(e) {
+
 	var search = Alloy.createController('searchEvents', {
-		 tf_searchBar : $.tf_searchBar
+		tf_searchBar : $.tf_searchBar
 		//searchingText : searching
 	}).getView();
 	if (Ti.Android) {

@@ -10,6 +10,7 @@ exports.getInterest = function(callback, callbackError) {
 	xhr.onload = function(e) {
 		var json = this.responseText;
 		var response = JSON.parse(json);
+		
 		callback(response);
 
 	};

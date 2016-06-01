@@ -5,6 +5,8 @@ var post = require('/api/addEvent');
 var ImageFactory = require('ti.imagefactory');
 var loginResponse = Ti.App.Properties.getObject('loginResponse');
 //alert("login response is  ::::" + JSON.stringify(loginResponse));
+
+// Home Screen
 $.view_imgHome.addEventListener('click', function(e) {
 	var home = Alloy.createController('home').getView();
 	if (Ti.Android) {
@@ -14,6 +16,8 @@ $.view_imgHome.addEventListener('click', function(e) {
 
 	}
 });
+
+//Profile Screen
 
 $.view_imgUser.addEventListener('click', function(e) {
 	var profile = Alloy.createController('profile').getView();
@@ -32,12 +36,30 @@ function openCamera() {
 		//function to call upon successful load of the gallery
 		success : function(e) {
 			if (e.mediaType === Titanium.Media.MEDIA_TYPE_PHOTO) {
-				// $.img_camera.image = e.media;
-				//profileImgcheck = true;
 
-				var newBlob = ImageFactory.compress(e.media, 0.25);
+				var newBlob = ImageFactory.compress(e.media, 0.5);
 
 				$.img_camera.image = newBlob;
+
+				var params = {
+					file : newBlob
+				};
+
+				var xhr = Titanium.Network.createHTTPClient();
+				xhr.open("POST", "http://thriggle.com/rest/imageupload");
+				xhr.send(params);
+
+				xhr.onload = function(e) {
+					var json = this.responseText;
+					var response = JSON.parse(json);
+					alert(response);
+
+				};
+				xhr.onerror = function(e) {
+					alert(e);
+
+				};
+
 			}
 		},
 
@@ -51,60 +73,101 @@ function openCamera() {
 }
 
 // Images from Gallery
+//
+// function openGallery() {
+// Titanium.Media.openPhotoGallery({
+// //function to call upon successful load of the gallery
+// success : function(e) {
+// if (e.mediaType === Titanium.Media.MEDIA_TYPE_PHOTO) {
+// $.img_camera.image = e.media;
+// //profileImgcheck = true;
+//
+// var xhr = Titanium.Network.createHTTPClient();
+// xhr.onload = function(e) {
+// Ti.UI.createAlertDialog({
+// title : 'Success',
+// message : 'status code ' + this.status
+// }).show();
+// };
+// xhr.open('POST', 'http://thriggle.com/rest/imageupload');
+// xhr.send({
+// theImage : e.media, /* event.media holds blob from gallery */
+// // username : 'Umair',
+// // password : 'Umair'
+// });
+// }
+// // var ind = Titanium.UI.createProgressBar({
+// // width : 200,
+// // height : 50,
+// // min : 0,
+// // max : 1,
+// // value : 0,
+// // style : Titanium.UI.iPhone.ProgressBarStyle.PLAIN,
+// // top : 10,
+// // message : 'Uploading image',
+// // font : {
+// // fontSize : 12,
+// // fontWeight : 'bold'
+// // },
+// // color : '#888'
+// // });
+// // $.self.add(ind);
+// // ind.show();
+// // var xhr = Titanium.Network.createHTTPClient();
+// // // onsendstream called repeatedly, use the progress property to
+// // // update the progress bar
+// // xhr.onsendstream = function(e) {
+// // ind.value = e.progress;
+// // Ti.API.info('ONSENDSTREAM - PROGRESS: ' + e.progress);
+// // };
+// },
+//
+// error : function(e) {
+// alert("There was an error in uploading picture");
+// },
+// cancel : function(e) {
+// //  alert("The event was cancelled");
+// },
+// });
+// }
 
-function openGallery() {
-	Titanium.Media.openPhotoGallery({
-		//function to call upon successful load of the gallery
-		success : function(e) {
-			if (e.mediaType === Titanium.Media.MEDIA_TYPE_PHOTO) {
-				$.img_camera.image = e.media;
-				//profileImgcheck = true;
-			}
-		},
-
-		error : function(e) {
-			alert("There was an error");
-		},
-		cancel : function(e) {
-			//  alert("The event was cancelled");
-		},
-	});
-}
-
-$.btn_snap.addEventListener('click', function(e) {
-
-	if (Ti.Media.hasCameraPermissions()) {
-		openCamera();
-	} else {
-		Ti.Media.requestCameraPermissions(function(e) {
-			if (e.success) {
-				//alert('You granted permission.');
-				openCamera();
-			} else {
-				alert('You denied permission.');
-			}
-		});
-	}
+$.self.addEventListener('open', function(e) {
+	openCamera();
+	//openGallery();
 });
 
-$.btn_upload.addEventListener('click', function(e) {
+//Opening Camera
 
-	openGallery();
-});
+// $.btn_snap.addEventListener('click', function(e) {
+// 
+	// if (Ti.Media.hasCameraPermissions()) {
+		// openCamera();
+	// } else {
+		// Ti.Media.requestCameraPermissions(function(e) {
+			// if (e.success) {
+				// //alert('You granted permission.');
+				// openCamera();
+			// } else {
+				// alert('You denied permission.');
+			// }
+		// });
+	// }
+// });
+
+
+
+// $.btn_upload.addEventListener('click', function(e) {
+// 
+	// openGallery();
+// });
+
+
+
 
 // Interest API Call
 
 $.view_interest.addEventListener('click', function(e) {
 	interest.getInterest(function(load) {
-		//var dataReceived = [];
-
-		//alert(load[0].name);
-		// for (var i = 0; i < load.length; i++) {
-		// dataReceived = load[i];
-		// //alert(dataReceived[i].name + dataReceived[i].id);
-		//
-		// }
-		//console.log(JSON.stringify(dataReceived));
 
 		var listView = Ti.UI.createListView({
 			backgroundColor : 'white',
@@ -141,6 +204,7 @@ $.view_interest.addEventListener('click', function(e) {
 		listView.addEventListener('itemclick', function(e) {
 			$.tf_interest.value = load[e.itemId].name;
 			Alloy.Globals.interestId = load[e.itemId].id;
+			alert(Alloy.Globals.interestId);
 			listView.visible = false;
 
 		});
@@ -155,6 +219,9 @@ $.view_interest.addEventListener('click', function(e) {
 	});
 
 });
+
+
+
 // Sub Interest API call
 
 $.view_subInterest.addEventListener('click', function(e) {
@@ -215,7 +282,7 @@ $.view_clockStart.addEventListener('click', function(e) {
 	var time = require('/timePicker');
 
 	var clockStart = time.timePicker(function(load) {
-		alert(load);
+		//alert(load);
 		var hours = load.getHours();
 		var mins = load.getMinutes();
 		$.lbl_TimeStart.text = hours + ' : ' + mins;
@@ -289,7 +356,7 @@ function outputRepeatedTimeState() {
 // Calender Click Listeners
 $.view_calenderOneTimeEvent.addEventListener('click', function(e) {
 	var initDate = $.lbl_calenderOneTimeEvent.text ? new Date($.lbl_calenderOneTimeEvent.text) : new Date();
-	require('DatePickerView')({
+	require('/DatePickerView')({
 		value : initDate,
 		callback : function(selDate) {
 			console.log('Selected date: ', formatDate(selDate));
@@ -300,7 +367,7 @@ $.view_calenderOneTimeEvent.addEventListener('click', function(e) {
 
 $.view_calenderRepeatedEvents.addEventListener('click', function(e) {
 	var initDate = $.lbl_calenderRepeatedEvents.text ? new Date($.lbl_calenderRepeatedEvents.text) : new Date();
-	require('DatePickerView')({
+	require('/DatePickerView')({
 		value : initDate,
 		callback : function(selDate) {
 			console.log('Selected date: ', formatDate(selDate));
